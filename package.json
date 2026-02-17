@@ -1,0 +1,48 @@
+{
+  "name": "@itobuz/access-control",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "packcheck": "npm pack --dry-run"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.0.0",
+    "@nestjs/core": "^10.0.0",
+    "@nestjs/graphql": "^12.0.0",
+    "reflect-metadata": "^0.1.14"
+  },
+  "description": "Reusable NestJS guard/decorators for privilege-based access control",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itobuztech/auth-micro-service.git",
+    "directory": "packages/access-control"
+  },
+  "homepage": "https://github.com/itobuztech/auth-micro-service/tree/main/packages/access-control",
+  "bugs": {
+    "url": "https://github.com/itobuztech/auth-micro-service/issues"
+  },
+  "keywords": [
+    "nestjs",
+    "guard",
+    "graphql",
+    "authorization",
+    "rbac",
+    "privilege"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js"
+    }
+  }
+}
