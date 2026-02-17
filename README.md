@@ -1,4 +1,4 @@
-# @itobuz/access-control
+# privilege-access-control
 
 Reusable NestJS access-control primitives for microservices.
 
@@ -12,7 +12,7 @@ Reusable NestJS access-control primitives for microservices.
 ## Install
 
 ```bash
-npm install @itobuz/access-control
+npm install privilege-access-control
 ```
 
 ## Publish to npm
@@ -46,12 +46,12 @@ npm version patch
 npm publish --access public
 ```
 
-For this scoped package (`@itobuz/...`), the `--access public` flag is required on first publish.
+For this unscoped package, `--access public` is optional.
 
 ## Use in another microservice
 
 ```bash
-npm install @itobuz/access-control
+npm install privilege-access-control
 ```
 
 Then import from your module/controller/resolver:
@@ -63,7 +63,7 @@ import {
   CurrentUserId,
   PrivilegeGroup,
   PrivilegeName,
-} from '@itobuz/access-control';
+} from 'privilege-access-control';
 ```
 
 ## Usage
@@ -75,7 +75,7 @@ import {
   CurrentUserId,
   PrivilegeGroup,
   PrivilegeName,
-} from '@itobuz/access-control';
+} from 'privilege-access-control';
 
 @UseGuards(PrivilegesGuard)
 @RequirePrivilege(PrivilegeGroup.USER, PrivilegeName.READ)
