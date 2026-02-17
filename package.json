@@ -21,12 +21,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/itobuztech/auth-micro-service.git",
-    "directory": "packages/access-control"
+    "url": "git+https://github.com/auth-micro-service.git",
+    "directory": "packages/privilege-guard-package"
   },
-  "homepage": "https://github.com/itobuztech/auth-micro-service/tree/main/packages/access-control",
+  "homepage": "https://github.com/auth-micro-service/tree/main/packages/privilege-guard-package",
   "bugs": {
-    "url": "https://github.com/itobuztech/auth-micro-service/issues"
+    "url": "https://github.com/auth-micro-service/issues"
   },
   "keywords": [
     "nestjs",
